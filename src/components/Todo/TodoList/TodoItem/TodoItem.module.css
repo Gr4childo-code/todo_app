@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	border: 1px solid black;
+	height: 50px;
+	margin-top: 10px;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+}
+.action {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 50%;
+	gap: 20px;
+	padding-right: 20px;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Todo from '../Todo/Todo';
 import styles from './App.module.css';
-const App = () => {
+const App = ({ TODOS }) => {
 	return (
 		<>
 			<div className={styles.container}>
@@ -9,9 +9,7 @@ const App = () => {
 					This is my <span>TODO APP</span>
 				</div>
 			</div>
-			<div>
-				<Todo />
-			</div>
+			<Todo TODOS={TODOS} />
 		</>
 	);
 };

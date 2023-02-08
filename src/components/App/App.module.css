@@ -1,0 +1,14 @@
+.container {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	border: 1px solid black;
+}
+.title {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.title span {
+	color: red;
+}

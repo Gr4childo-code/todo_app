@@ -16,8 +16,8 @@ const TodoList = ({ TODOS, removeTodo, changeFilter, changeChacked }) => {
 					key={i.id}
 					id={i.id}
 					title={i.title}
-					removeTodo={removeTodo}
 					checked={i.checked}
+					removeTodo={removeTodo}
 					changeChacked={changeChacked}
 				/>
 			))}

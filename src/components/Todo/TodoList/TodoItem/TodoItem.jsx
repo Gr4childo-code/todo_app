@@ -4,17 +4,17 @@ import Button from '../../../Button/';
 const TodoItem = ({ title, id, removeTodo, checked, changeChacked }) => {
 	return (
 		<div className={styles.container}>
-			<span>{title}</span>
+			<span className={styles.title}>{title}</span>
 			<div className={styles.action}>
 				<Button
-					text={'check'}
 					checked={checked}
+					text={checked ? 'done' : 'work'}
 					onClick={() => {
 						changeChacked(id);
 					}}
 				/>
 				<Button text={'settings'} />
-				<Button text={'delete'} onClick={() => removeTodo(id)} />
+				<Button text={'X'} onClick={() => removeTodo(id)} />
 			</div>
 		</div>
 	);

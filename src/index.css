@@ -1,1 +1,17 @@
 @import '~normalize.css/normalize.css';
+
+:root {
+	/* yellow */
+	--yellow: #ffff00;
+	--yellow-dark: #999933;
+	--yellow-shadow: #666600;
+	--yellow-light: #ffff66;
+	--yellow-sun: #ffff99;
+
+	/* puple */
+	--purple: #660099;
+	--purple-dark: #663366;
+	--purple-shadow: #330033;
+	--purple-light: #cc66ff;
+	--purple-sun: #cc99ff;
+}

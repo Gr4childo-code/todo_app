@@ -1,36 +1,36 @@
 .button {
 	margin-right: 5px;
 	box-shadow: 0px 1px 0px 0px #f0f7fa;
-	background-color: #057fd0;
+	background-color: var(--purple);
 	border-radius: 19px;
-	border: 1px solid #057fd0;
+	border: none;
 	display: inline-block;
 	cursor: pointer;
-	color: #ffffff;
+	color: #ffff;
 	font-family: Arial;
 	font-size: 15px;
 	font-weight: bold;
 	padding: 11px 26px;
 	text-decoration: none;
 	text-shadow: 0px 0px 10px #5b786b;
+	transition: all 0.3s linear;
 }
 .button:hover {
-	background-color: #019ad2;
+	background-color: var(--purple-light);
 }
+
 .button:active {
 	position: relative;
 	top: 1px;
 }
+
 .button.active {
-	background-color: #59ef33;
-}
-.button.false {
-	background-color: red;
-}
-.button.active:hover {
-	background-color: red;
+	background-color: var(--yellow-light);
 }
 
-.button.false:hover {
-	background-color: #59ef33;
+.button.false {
+	background-color: var(--purple-light);
+}
+.button.delete {
+	background-color: var(--purple-shadow);
 }

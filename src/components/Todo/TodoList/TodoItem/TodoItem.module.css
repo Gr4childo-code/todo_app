@@ -1,11 +1,12 @@
 .container {
 	display: flex;
-	border: 1px solid black;
 	height: 50px;
-	margin-top: 10px;
+	margin-bottom: 10px;
 	justify-content: space-between;
 	align-items: center;
 	width: 50%;
+	background-color: var(--purple-sun);
+	border-radius: 20px;
 }
 .action {
 	display: flex;
@@ -14,4 +15,10 @@
 	width: 50%;
 	gap: 20px;
 	padding-right: 20px;
+}
+.title {
+	margin-left: 5px;
+	color: #ffff;
+	font-size: 20px;
+	font-weight: bold;
 }

@@ -9,8 +9,11 @@ const Button = ({ text, ...props }) => {
 					className={
 						props.checked ? styles.button + ' ' + styles.active : styles.button + ' ' + styles.false
 					}
-					{...props}
-				>
+					{...props}>
+					{text}
+				</button>
+			) : text === 'X' ? (
+				<button className={styles.button + ' ' + styles.delete} {...props}>
 					{text}
 				</button>
 			) : (

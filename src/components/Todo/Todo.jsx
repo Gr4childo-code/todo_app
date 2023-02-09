@@ -22,21 +22,19 @@ const Todo = ({ TODOS }) => {
 	let taskForTodoList = tasks;
 	if (filter === 'completed') {
 		taskForTodoList = tasks.filter((t) => t.checked === true);
-	} else if (filter === 'active') {
+	} else if (filter === 'work') {
 		taskForTodoList = tasks.filter((t) => t.checked === false);
 	}
 
 	return (
-		<>
-			<div className={styles.container}>
-				<TodoList
-					TODOS={taskForTodoList}
-					removeTodo={removeTodo}
-					changeFilter={changeFilter}
-					changeChacked={changeChacked}
-				/>
-			</div>
-		</>
+		<div className={styles.container}>
+			<TodoList
+				TODOS={taskForTodoList}
+				removeTodo={removeTodo}
+				changeFilter={changeFilter}
+				changeChacked={changeChacked}
+			/>
+		</div>
 	);
 };
 

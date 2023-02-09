@@ -8,8 +8,8 @@ const TodoList = ({ TODOS, removeTodo, changeFilter, changeChacked }) => {
 		<div className={styles.container}>
 			<div className={styles.filter}>
 				<Button text={'all'} onClick={() => changeFilter('all')} />
+				<Button text={'work'} onClick={() => changeFilter('work')} />
 				<Button text={'completed'} onClick={() => changeFilter('completed')} />
-				<Button text={'active'} onClick={() => changeFilter('active')} />
 			</div>
 			{TODOS.map((i) => (
 				<TodoItem

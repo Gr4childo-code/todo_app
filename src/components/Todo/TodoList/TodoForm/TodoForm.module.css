@@ -1,0 +1,22 @@
+.form {
+	margin-bottom: 40px;
+	background: var(--purple-sun);
+	border-radius: 20px;
+	height: 75px;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+}
+.form_item {
+	padding: 0 10px;
+	background-color: var(--yellow-sun);
+	border-radius: 20px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+.input {
+	margin: 0 10px;
+	padding: 5px;
+	border: 2px solid var(--yellow-light);
+}

@@ -17,6 +17,16 @@ const defaultTodo = [
 	{
 		id: 4,
 		title: 'HTML',
+		checked: false,
+	},
+	{
+		id: 5,
+		title: 'Tailwind',
+		checked: false,
+	},
+	{
+		id: 6,
+		title: 'vue',
 		checked: true,
 	},
 ];

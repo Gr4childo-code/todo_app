@@ -1,27 +1,30 @@
 import React from 'react';
-import styles from './TodoList.module.css';
+import TodoFilter from './TodoFilter';
 import TodoItem from './TodoItem/TodoItem';
-import Button from '../../Button';
+import TodoForm from './TodoForm';
+import styles from './TodoList.module.css';
 
 const TodoList = ({ TODOS, removeTodo, changeFilter, changeChacked }) => {
 	return (
-		<div className={styles.container}>
-			<div className={styles.filter}>
-				<Button text={'all'} onClick={() => changeFilter('all')} />
-				<Button text={'work'} onClick={() => changeFilter('work')} />
-				<Button text={'completed'} onClick={() => changeFilter('completed')} />
+		<>
+			<div className={styles.container}>
+				<TodoFilter changeFilter={changeFilter} />
+
+				<TodoForm />
+				<div className={styles.container}>
+					{TODOS.map((i) => (
+						<TodoItem
+							key={i.id}
+							id={i.id}
+							title={i.title}
+							checked={i.checked}
+							removeTodo={removeTodo}
+							changeChacked={changeChacked}
+						/>
+					))}
+				</div>
 			</div>
-			{TODOS.map((i) => (
-				<TodoItem
-					key={i.id}
-					id={i.id}
-					title={i.title}
-					checked={i.checked}
-					removeTodo={removeTodo}
-					changeChacked={changeChacked}
-				/>
-			))}
-		</div>
+		</>
 	);
 };
 

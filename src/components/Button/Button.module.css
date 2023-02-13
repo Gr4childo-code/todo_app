@@ -40,3 +40,9 @@
 		padding: 10px 20px;
 	}
 }
+@media only screen and (max-device-width: 320px) {
+	.button {
+		font-size: 14px;
+		padding: 5px 14px;
+	}
+}

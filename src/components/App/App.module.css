@@ -13,3 +13,13 @@
 .title span {
 	color: red;
 }
+@media only screen and (max-device-width: 480px) {
+	.title {
+		font-size: 30px;
+	}
+}
+@media only screen and (max-device-width: 320px) {
+	.title {
+		font-size: 25px;
+	}
+}

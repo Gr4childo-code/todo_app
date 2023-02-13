@@ -1,5 +1,5 @@
 @import '~normalize.css/normalize.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 :root {
 	/* yellow */
 	--yellow: #ffff00;
@@ -14,4 +14,6 @@
 	--purple-shadow: #330033;
 	--purple-light: #cc66ff;
 	--purple-sun: #cc99ff;
+	font-family: 'Noto Serif', serif;
+	font-weight: bold;
 }

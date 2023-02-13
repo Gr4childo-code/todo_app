@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './TodoItem.module.css';
 import Button from '../../../Button/';
-const TodoItem = ({ title, id, removeTodo, checked, changeChacked }) => {
+const TodoItem = ({ title, id, removeTodo, checked, changeChecked }) => {
 	return (
 		<div className={styles.container}>
 			<span className={styles.title}>{title}</span>
@@ -10,7 +10,7 @@ const TodoItem = ({ title, id, removeTodo, checked, changeChacked }) => {
 					checked={checked}
 					text={checked ? 'done' : 'work'}
 					onClick={() => {
-						changeChacked(id);
+						changeChecked(id);
 					}}
 				/>
 				<Button text={'settings'} />

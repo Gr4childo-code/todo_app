@@ -4,13 +4,20 @@ import TodoItem from './TodoItem/TodoItem';
 import TodoForm from './TodoForm';
 import styles from './TodoList.module.css';
 
-const TodoList = ({ TODOS, removeTodo, changeFilter, changeChacked }) => {
+const TodoList = ({
+	TODOS,
+	removeTodo,
+	changeFilter,
+	changeChecked,
+	handleClick,
+	inputNameFormRef,
+}) => {
 	return (
 		<>
 			<div className={styles.container}>
 				<TodoFilter changeFilter={changeFilter} />
 
-				<TodoForm />
+				<TodoForm handleClick={handleClick} inputNameFormRef={inputNameFormRef} />
 				<div className={styles.container}>
 					{TODOS.map((i) => (
 						<TodoItem
@@ -19,7 +26,7 @@ const TodoList = ({ TODOS, removeTodo, changeFilter, changeChacked }) => {
 							title={i.title}
 							checked={i.checked}
 							removeTodo={removeTodo}
-							changeChacked={changeChacked}
+							changeChecked={changeChecked}
 						/>
 					))}
 				</div>

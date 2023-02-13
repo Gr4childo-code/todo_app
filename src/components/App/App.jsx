@@ -1,7 +1,7 @@
 import React from 'react';
 import Todo from '../Todo/Todo';
 import styles from './App.module.css';
-const App = ({ TODOS }) => {
+const App = ({ getTodoLocal }) => {
 	return (
 		<div className={styles.ll}>
 			<div className={styles.container}>
@@ -10,7 +10,7 @@ const App = ({ TODOS }) => {
 				</div>
 			</div>
 			<div>
-				<Todo TODOS={TODOS} />
+				<Todo getTodoLocal={getTodoLocal} />
 			</div>
 		</div>
 	);

@@ -19,16 +19,18 @@ const TodoList = ({
 
 				<TodoForm handleClick={handleClick} inputNameFormRef={inputNameFormRef} />
 				<div className={styles.container}>
-					{TODOS.map((i) => (
-						<TodoItem
-							key={i.id}
-							id={i.id}
-							title={i.title}
-							checked={i.checked}
-							removeTodo={removeTodo}
-							changeChecked={changeChecked}
-						/>
-					))}
+					{TODOS === null
+						? true
+						: TODOS.map((i) => (
+								<TodoItem
+									key={i.id}
+									id={i.id}
+									title={i.title}
+									checked={i.checked}
+									removeTodo={removeTodo}
+									changeChecked={changeChecked}
+								/>
+						  ))}
 				</div>
 			</div>
 		</>

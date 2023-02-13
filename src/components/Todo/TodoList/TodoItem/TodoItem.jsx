@@ -4,7 +4,7 @@ import Button from '../../../Button/';
 const TodoItem = ({ title, id, removeTodo, checked, changeChecked }) => {
 	return (
 		<div className={styles.container}>
-			<span className={styles.title}>{title}</span>
+			<span className={checked ? styles.title + ' ' + styles.dashed : styles.title}>{title}</span>
 			<div className={styles.action}>
 				<Button
 					checked={checked}

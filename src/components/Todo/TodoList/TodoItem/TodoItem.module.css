@@ -20,4 +20,10 @@
 	color: #000000;
 	font-size: 20px;
 	font-weight: bold;
+	/* text-decoration: none; */
+}
+
+.title.dashed {
+	text-decoration: line-through;
+	/* color: white; */
 }

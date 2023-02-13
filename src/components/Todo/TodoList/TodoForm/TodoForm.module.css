@@ -20,3 +20,13 @@
 	padding: 5px;
 	border: 2px solid var(--yellow-light);
 }
+
+@media only screen and (max-device-width: 480px) {
+	.form {
+		width: 90%;
+	}
+
+	.form_item .input {
+		width: 70%;
+	}
+}

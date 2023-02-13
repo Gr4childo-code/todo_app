@@ -11,3 +11,5 @@
 .container_todoItem {
 	background-color: beige;
 }
+@media only screen and (max-device-width: 480px) {
+}

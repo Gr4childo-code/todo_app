@@ -33,3 +33,10 @@
 .button.delete {
 	background-color: var(--purple-shadow);
 }
+
+@media only screen and (max-device-width: 480px) {
+	.button {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+}

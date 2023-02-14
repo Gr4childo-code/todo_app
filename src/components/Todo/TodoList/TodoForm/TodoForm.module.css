@@ -39,5 +39,7 @@
 
 	.form_item .input {
 		width: 70%;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 }

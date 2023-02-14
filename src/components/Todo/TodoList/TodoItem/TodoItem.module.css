@@ -67,6 +67,7 @@
 	}
 	.action {
 		margin-top: 20px;
+		margin-bottom: 5px;
 	}
 }
 @media only screen and (max-device-width: 320px) {

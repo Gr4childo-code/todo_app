@@ -1,18 +1,18 @@
 import React from 'react';
-import Todo from '../Todo/Todo';
-import styles from './App.module.css';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from '../pages/HomePage';
+import TodoPage from '../pages/TodoPage';
+
 const App = ({ getTodoLocal }) => {
 	return (
-		<div className={styles.ll}>
-			<div className={styles.container}>
-				<div className={styles.title}>
-					This is my <span>TODO APP</span>
-				</div>
-			</div>
-			<div>
-				<Todo getTodoLocal={getTodoLocal} />
-			</div>
-		</div>
+		<>
+			{/* <HomePage getTodoLocal={getTodoLocal} /> */}
+			<Routes>
+				<Route path='/' element={<HomePage getTodoLocal={getTodoLocal} />} />
+				<Route path='/todo_app/*' element={<HomePage getTodoLocal={getTodoLocal} />} />
+				<Route path='/todo_app/:todoID' element={<TodoPage />} />
+			</Routes>
+		</>
 	);
 };
 

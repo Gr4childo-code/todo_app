@@ -9,8 +9,7 @@ const Todo = ({ getTodoLocal }) => {
 
 	const [filter, setFilter] = useState('all');
 	const inputNameFormRef = createRef();
-	// const storage = localStorage.setItem('todos', JSON.stringify([...TODOS]));
-	// console.log(storage);
+
 	// Start component Form
 	const handleClick = (e) => {
 		e.preventDefault();

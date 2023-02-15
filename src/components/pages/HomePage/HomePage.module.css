@@ -1,0 +1,25 @@
+.container {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	border: 1px solid black;
+	height: 100%;
+}
+.title {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.title span {
+	color: red;
+}
+@media only screen and (max-device-width: 480px) {
+	.title {
+		font-size: 30px;
+	}
+}
+@media only screen and (max-device-width: 320px) {
+	.title {
+		font-size: 25px;
+	}
+}

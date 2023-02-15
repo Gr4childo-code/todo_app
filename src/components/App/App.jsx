@@ -10,7 +10,7 @@ const App = ({ getTodoLocal }) => {
 			<Routes>
 				<Route path='/' element={<HomePage getTodoLocal={getTodoLocal} />} />
 				<Route path='/todo_app/*' element={<HomePage getTodoLocal={getTodoLocal} />} />
-				<Route path='/todo_app/:todoID' element={<TodoPage />} />
+				<Route path='/todo_app/:todoID' element={<TodoPage getTodoLocal={getTodoLocal} />} />
 			</Routes>
 		</>
 	);
